@@ -1,6 +1,13 @@
-num = float(input("Введите вещественеое число: "))
-sum = 0
-for i in str(num):
-    if i != ".":
-        sum += int(i)
-print(sum)
+x = input('Введите число ')
+
+def summa(x):
+    if float(x) < 0:
+        x = float(x) * (-1)
+    number = 0
+    for i in str(x):
+        if i != '.':
+            number += int(i)
+    return number
+
+
+print(f'Сумма чисел равна {summa(x)}')
